@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #dom {
+            border: 1px solid rgb(61, 213, 213);
+            width: 95%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid rgb(195, 192, 192);
+            border-collapse: separate;
+        }
+
+        thead {
+            background-color: rgb(195, 192, 192);
+            color: rgb(255, 255, 255);
+        }
+
+        #code {
+            border: 1px solid rgb(61, 213, 213);
+            width: 95%;
+        }
+
+        .dri {
+            text-align: left;
+            display: -webkit-box;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label>選擇器:</label>
+            <input type="text">
+            <input type="button" value="確定">
+        </div>
+        <div>
+            <font color="blue">jQuery語句:</font> <font color="blue" id="jqfunction"></font>
+        </div>
+        </br>
+
+        <div>
+            <font color="blue" id="result">匹配結果:</font><font color="blue"></font>
+            <font color="red" id="sel"></font>
+        </div>
+    </div>
+    <div class="dri">
+        <div>
+            <div id="dom">
+            </div>
+        </div>
+
+        <div>
+            <p>程式代碼</p>
+            <pre id="code">
+         </pre>
+        </div>
+    </div>
+</body>
+<script src="./jquery-1.11.3.min.js"> </script>
+<script>
+    $.ajax({
+        url: "Exercise-1-read.txt",
+        success: function (data, status) {
+            console.log(arguments)
+            console.log(data)
+            $("#dom").html(data);
+            $("#code").text(data);
+        },
+        error: function (data, status) {
+            console.log(arguments)
+        }
+    });
+
+    /**/
+
+    function readTxt() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", "Exercise-1-read.txt", true);
+        xhr.send();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                console.log(xhr);
+                console.log(xhr.responseText);
+            } else if (xhr.status == 404) {
+                console.log(xhr.status);
+            }
+        };
+    }
+    readTxt()
+</script>

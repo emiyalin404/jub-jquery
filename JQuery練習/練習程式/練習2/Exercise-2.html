@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-1.11.3.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./Exercise-2.css" />
+</head>
+
+<body>
+    <div class="box-title">
+        <label>图片插入位置:</label>
+        <label><input type="radio" name="operations" value="append" checked="checked" />append</label>
+        <label><input type="radio" name="operations" value="prepend" />prepend</label>
+    </div>
+    <div class="box">
+        <div class="box-item">
+            <div class="item-title">可选项</div>
+            <ul class="item-list jq-leftbox">
+
+            </ul>
+        </div>
+        <div class="box-btns">
+            <div class="item-btn jq-right">&gt;</div>
+            <div class="item-btn jq-left">&lt;</div>
+            <div class="item-btn jq-rightall">&gt;&gt;</div>
+            <div class="item-btn jq-leftall">&lt;&lt;</div>
+        </div>
+        <div class="box-item">
+            <div class="item-title">已选项</div>
+            <ul class="item-list jq-rightbox">
+            </ul>
+        </div>
+    </div>
+    <script src="./Exercise_2jq.js"></script>
+</body>
+
+</html>

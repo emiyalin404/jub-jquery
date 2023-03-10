@@ -1,0 +1,11 @@
+ 
+ {
+    "text":
+    [{"name": "img1","src":"./image.1.jpg"},
+    {"name": "img2","src":"./image.2.jpg"},
+    {"name": "img3","src":"./image.3.jpg"},
+    {"name": "img4","src":"./image.4.jpg"},
+    {"name": "img5","src":"./image.5.jpg"},
+    {"name": "img6","src":"./image.6.jpg"},
+    {"name": "img7","src":"./image.7.jpg"}]
+}

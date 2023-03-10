@@ -1,0 +1,105 @@
+* *:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* max-width: 1024px; */
+    margin: 1em auto;
+    padding: 0 0.5em;
+}
+
+pre {
+    max-width: 100%;
+    overflow: auto;
+    font-size: 0.9em;
+    border: 1px dotted #000000;
+}
+
+.header,
+.footer {
+    text-align: center;
+    background-color: #71A9D6;
+}
+
+.box,
+.box-small {
+    vertical-align: top;
+    padding: 0 0.2%;
+    border: 1px solid #71a9d6;
+}
+
+.box {
+    display: block;
+}
+
+.box-small {
+    display: inline-block;
+    /* IE 6-7 Hack */
+    *display: inline;
+    zoom: 1;
+    width: 49%;
+}
+
+@media screen and (max-width: 768px) {
+    .box-small {
+        width: 100%;
+    }
+}
+
+.clearfix {
+    /* IE 7 Hack */
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* -------------變化的css---------------------- */
+ #box-results>div {
+    margin-bottom: 1em;
+}
+
+#jquery-statement,
+#resulting-elements-count {
+    color: blue;
+}
+
+#resulting-elements {
+    color: red;
+}
+
+.found-element {
+    border: 2px solid #000000;
+    background-color: #DDDDDD;
+}
+
+#sample-dom-source {
+    max-height: 77em;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 1px;
+    border-color: grey;
+    font-size: 12px;
+}
+
+table.reference td {
+    line-height: 15px;
+    min-width: 24px;
+    border: 1px solid #d4d4d4;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    vertical-align: top;
+}

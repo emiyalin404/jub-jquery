@@ -1,0 +1,163 @@
+            <p>请使用我们的jQuery 选择器检测器来演示不同的选择器。</p>
+            <table class="reference notranslate">
+                <tr>
+                    <th width="20%">选择器</th>
+                    <th width="25%">实例</th>
+                    <th width="55%">选取</th>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>$("*")</td>
+                    <td>所有元素</td>
+                </tr>
+                <tr>
+                    <td>#<em>id</em></td>
+                    <td>$("#lastname")</td>
+                    <td>id="lastname" 的元素</td>
+                </tr>
+                <tr>
+                    <td>.<em>class</em></td>
+                    <td>$(".intro")</td>
+                    <td>class="intro" 的所有元素</td>
+                </tr>
+                <tr>
+                    <td>.<em>class,</em>.<em>class</em></td>
+                    <td>$(".intro,.demo")</td>
+                    <td>class 为 "intro" 或 "demo" 的所有元素</td>
+                </tr>
+                <tr>
+                    <td><em>element</em></td>
+                    <td>$("p")</td>
+                    <td>所有 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>:first</td>
+                    <td>$("p:first")</td>
+                    <td>第一个 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>:last</td>
+                    <td>$("p:last")</td>
+                    <td>最后一个 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>:first-child</td>
+                    <td>$("p:first-child")</td>
+                    <td>属于其父元素的第一个子元素的所有 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>:last-child</td>
+                    <td>$("p:last-child")</td>
+                    <td>属于其父元素的最后一个子元素的所有 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>parent &gt; child</td>
+                    <td>$("div &gt; p")</td>
+                    <td>&lt;div&gt; 元素的直接子元素的所有 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>parent descendant</td>
+                    <td>$("div p")</td>
+                    <td>&lt;div&gt; 元素的后代的所有 &lt;p&gt; 元素</td>
+                </tr>
+                <tr>
+                    <td>:input</td>
+                    <td>$(":input")</td>
+                    <td>所有 input 元素</td>
+                </tr>
+                <tr>
+                    <td>:text</td>
+                    <td>$(":text")</td>
+                    <td>所有带有 type="text" 的 input 元素</td>
+                </tr>
+                <tr>
+                    <td>:radio</td>
+                    <td>$(":radio")</td>
+                    <td>所有带有 type="radio" 的 input 元素</td>
+                </tr>
+                <tr>
+                    <td>:checkbox</td>
+                    <td>$(":checkbox")</td>
+                    <td>所有带有 type="checkbox" 的 input 元素</td>
+                </tr>
+                <tr>
+                    <td>:button</td>
+                    <td>$(":button")</td>
+                    <td>所有带有 type="button" 的 input 元素</td>
+                </tr>
+                <tr>
+                    <td>:selected</td>
+                    <td>$(":selected")</td>
+                    <td>所有选定的下拉列表元素</td>
+                </tr>
+            </table>
+
+            <ul class="my-list">
+                <li>
+                    <a href="http://jquery.com">jQuery website</a>
+                    <ul>
+                        <li><a href="#css1">CSS1</a></li>
+                        <li><a href="#css2">CSS2</a></li>
+                        <li><a href="#css3">CSS3</a></li>
+                        <li>Basic XPath</li>
+                    </ul>
+                </li>
+                <li>
+                    jQuery also supports
+                    <ul>
+                        <li>Custom selectors</li>
+                        <li>Form selectors</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <table id="languages">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Type</th>
+                        <th>Invented</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>Static</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby</td>
+                        <td>Dynamic</td>
+                        <td>1993</td>
+                    </tr>
+                    <tr>
+                        <td>Smalltalk</td>
+                        <td>Dynamic</td>
+                        <td>1972</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Static</td>
+                        <td>1983</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <label for="aTextField">Text:</label>
+                <input type="text" id="aTextField" name="someTextField" />
+            </div>
+            <div>
+                <span>Radio group:</span>
+                <label><input type="radio" name="radio-group" id="radio-a" value="A"/> A</label>
+                <label><input type="radio" name="radio-group" id="radio-b" value="B" checked="checked"/> B</label>
+                <label><input type="radio" name="radio-group" id="radio-c" value="C"/> C</label>
+            </div>
+            <div>
+                <span>Checkboxes:</span>
+                <label><input type="checkbox" name="checkboxes" id="checkbox-1" value="1"/> 1</label>
+                <label><input type="checkbox" name="checkboxes" id="checkbox-2" value="2"/> 2</label>
+                <label><input type="checkbox" name="checkboxes" id="checkbox-3" value="3" checked="checked"/> 3</label>
+                <label><input type="checkbox" name="checkboxes" id="checkbox-4" value="4"/> 4</label>
+            </div>
+        </div>

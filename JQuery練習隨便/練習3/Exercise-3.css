@@ -1,0 +1,23 @@
+* {
+    background: #FFFFFF;
+    margin: 10% 3%;
+    padding: auto;
+}
+div {
+    margin: auto;
+    padding: auto;
+    width: 700;
+    height: 66;
+}
+label {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: red;
+    padding: 1% 1%;
+    margin: 1%;
+    width: 35;
+    height: 35;
+    outline: 1px solid;
+    text-align: center;
+    line-height: 30px;
+}

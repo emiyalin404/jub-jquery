@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ <head> 
+   <meta charset="utf-8"> 
+   <title>Selected Shakespere Players </title> 
+   <link rel="stylesheet" href="./css/01.css"> 
+   <script src="./js/jquery.js"></script> 
+   <script>
+    $(document).ready(function() { 
+       $('#selected-plays > li').addClass('horizontal'); 
+       $('#selected-plays li:not(.horizontal)').addClass('sub-level'); 
+      
+      //$('a[href^="mailto:"]').addClass('mailto'); 
+      //$('a[href$=".pdf"]').addClass('pdflink'); 
+      //$('a[href^="http://"]')
+      //        .not('[target="_blank"]')
+      //        .attr('target', '_blank');    
+    
+    });
+
+   </script>
+   <body>
+    <h2>Selected Shakespere Players</h2> 
+	<ul id="selected-plays"> 
+	 <li>Comedies 
+        <ul> 
+            <li><a href="http://www.baidu.com/">As You Like It</a></li> 
+            <li>All's Well That Ends Well</li> 
+            <li>A Midsummer Night's Dream</li> 
+            <li>Twelfth Night</li> 
+        </ul> 
+	 </li> 
+	 <li>Tragedies 
+        <ul> 
+            <li><a href="hamlet.pdf">Hamlet</a></li> 
+            <li>Macbeth</li> 
+            <li>Romeo and Juliet</li> 
+        </ul> 
+	 </li> 
+	 <li>Histories 
+        <ul> 
+            <li>Henry IV (<a href="mailto:jennifer_yin@email.lingan.com.cn">email</a>) 
+        <ul> 
+            <li>Part I</li> 
+            <li>Part II</li> 
+        </ul> 
+	 <li><a href="http://jquery.com"> 
+	 Henry V</a></li> 
+	 <li>Richard II</li> 
+	 </ul> 
+	 </li> 
+	</ul> 	 
+ </body> 
+</html>
